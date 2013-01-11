@@ -657,7 +657,7 @@ h6 {
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
+  color: #f60;
   text-rendering: optimizelegibility;
 }
 
@@ -5861,7 +5861,7 @@ a.badge:hover {
   font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
-  color: inherit;
+  color: ~f60;
 }
 
 .hero-unit li {
