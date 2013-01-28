@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>rabbit-hutch, from patchApps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A ruby service that listens to trace information for RabbitMQ">
+    <meta name="author" content="John Ryan">
 
     <!-- Le styles -->
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
@@ -50,7 +50,7 @@
 	<header class="jumbotron subhead" id="overview">
 	  <div class="container">
 		<h1>rabbit-hutch</h1>
-		<h2>The RabbitMq Trace Logger<h2>
+		<h2>a rabbitMQ Trace Logger<h2>
 	  </div>
 	</header>
     
@@ -61,17 +61,17 @@
 
      <div class="row">
             <div class="span8">
+            	
+            	 <h3>
+                    What is rabbit-hutch?</h3>
+                <p>
+                 rabbit-hutch is a handy service written in ruby, that can listen to multiple rabbitMQ nodes and echo all messages
+            	to console, a log file file or a MongoDb Database  </p>
                 <h3>
-                    What is it?</h3>
+                    What does rabbit-hutch do?</h3>
                 <p>
-                    A ruby service for monitoring the trace output on RabbitMq Nodes and writing the
-                    output to console, Log files or MongoDb.
-                </p>
-                <p>
-                    Once tracing is started on the target rabbitMQ nodes, the service creates a queue
-                    "rabbithutch" that binds to the exchange "amq.rabbitmq.trace". All messages that
-                    arrive on the queue are then picked up by any registered consumers and written to
-                    standard output, a log file or a MongoDb Database.
+                    When <strong>Tracing</strong> is enabled on a rabbitMQ node all message received and published get duplicated on a a queue called <strong><i>amq.rabbitmq.trace</i></strong><br />
+                    rabbit-hutch service creates a queue" that binds to the exchange "amq.rabbitmq.trace" and writes all messages to standard output, a log file or a MongoDb Database... or all 3!
                 </p>
                 <h3>
                     Features</h3>
@@ -97,13 +97,14 @@
                 </p>
             </div>
             <div class="span4">
+            	
                 <h3>
                     API Documentation</h3>
                 <p>
                     You'll find the documentation on
                 </p>
                 <p>
-                    <a class="btn" href="http://rubydoc.info/gems/rabbithutch/0.1.2/frames">View Documentation
+                    <a class="btn" style="width: 200px;" href="http://rubydoc.info/gems/rabbithutch/0.1.2/frames">View Documentation
                         &raquo;</a></p>
                 <h3>
                     Downloads</h3>
@@ -111,19 +112,19 @@
                     The source code for this is availabe on GitHub.
                 </p>
                 <p>
-                    <a class="btn" href="http://github.com/jnyryan/rabbit-hutch">View Source &raquo;</a></p>
+                    <a class="btn" style="width: 200px;" href="http://github.com/patchapps/rabbit-hutch">View Source &raquo;</a></p>
                 <p>
                     the ruby gem is available on
                 </p>
                 <p>
-                    <a class="btn" href="https://rubygems.org/gems/rabbithutch">Get ruby gem &raquo;</a></p>
+                    <a class="btn" style="width: 200px;" href="https://rubygems.org/gems/rabbithutch">Get ruby gem &raquo;</a></p>
                 <h3>
                     Features and Issues</h3>
                 <p>
                     To raise a feature request or log a bug!
                 </p>
                 <p>
-                    <a class="btn" href="https://github.com/jnyryan/rabbit-hutch/issues">Issue Tracker
+                    <a class="btn" style="width: 200px;" href="https://github.com/patchapps/rabbit-hutch/issues">Issue Tracker
                         &raquo;</a></p>
                 <h3>
             </div>
@@ -131,7 +132,7 @@
         <hr>
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; patchApps.com 2012</p>
       </footer>
 
     </div> <!-- /container -->
@@ -152,6 +153,18 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
+	<script type="text/javascript">
 
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-13112699-9']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
   </body>
 </html>
