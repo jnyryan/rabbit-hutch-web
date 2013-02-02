@@ -5,6 +5,8 @@ GEM
     eventmachine (1.0.0)
     eventmachine (1.0.0-x86-mingw32)
     rack (1.4.1)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
@@ -19,5 +21,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  shotgun
   sinatra (= 1.1.0)
   thin
