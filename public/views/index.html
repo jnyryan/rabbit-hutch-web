@@ -22,33 +22,46 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-   </head>
+    
+  </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" style="height=30px">
+	<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
+          </button>
           <a class="brand" href="#">patchApps.com</a>
-          <a class="brand" href="https://rubygems.org/gems/rabbithutch">Download</a>
-          <a class="brand" href="https://github.com/patchapps/rabbit-hutch">Source Code</a>
-          <a class="brand" href="http://rubydoc.info/gems/rabbithutch/0.1.5/frames">Documentation</a>
-          <a class="brand" href="https://github.com/patchapps/rabbit-hutch/issues">Bugs and Feature Tracking</a>
-        
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a class="brand" href="https://rubygems.org/gems/rabbithutch">Download</a>
+              </li>
+              <li class="">
+                <a class="brand" href="https://github.com/patchapps/rabbit-hutch">Source Code</a>
+              </li>
+              <li class="">
+                <a class="brand" href="http://rubydoc.info/gems/rabbithutch/0.1.5/frames">Documentation</a>
+              </li>
+              <li class="">
+                <a class="brand" href="https://github.com/patchapps/rabbit-hutch/issues">Bugs and Feature Tracking</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-	
+    	
 	<header class="jumbotron subhead" id="overview">
 	  <div class="container">
 		<h1>rabbit-hutch</h1>
-		<h2>a rabbitMQ Trace Logger<h2>
+		<h2>an easy-to-use tracing and logging system for RabbitMQ<h2>
 	  </div>
 	</header>
     
@@ -106,9 +119,10 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
+    < <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>
@@ -122,6 +136,10 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../assets/js/bootstrap-affix.js"></script>
+    <script src="../assets/js/holder/holder.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
