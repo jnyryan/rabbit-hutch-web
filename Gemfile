@@ -1,5 +1,2 @@
 source :rubygems
-gem 'sinatra', '1.1.0'
-gem 'shotgun'
-gem 'thin'
-gem 'foreman'
+gem 'rack'
